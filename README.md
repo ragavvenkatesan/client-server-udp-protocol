@@ -19,5 +19,6 @@ Server reads from its port and recieves. No ACK sent.
 
 This is essentially an UDP protocol.
 
- 
-
+License is MIT, but please don't copy code if you are also doing the same project. This was a lot of 
+fun to implement and I don't want you to miss out on the fun if Prof. Dasgupta assigns the same
+project to you.

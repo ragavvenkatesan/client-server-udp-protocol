@@ -2,10 +2,9 @@
 #include<stdlib.h> // for random number generator
 
 #define NUM_MESSAGES_PER_PORT 1
-#define MESSAGE_LENGTH 50
+#define MESSAGE_LENGTH 40
 #define NUM_PORTS 10
 #define MAX_MESSAGE_LETTER 10 // each letter of the message word (word length = 10) 
-							  // won't be more than this value.
 struct message_t
 {
 	char data[MESSAGE_LENGTH];
@@ -27,17 +26,6 @@ void print_message (struct message_t *message)
 	}
 	printf(" ]");
 }
-
-void create_message(struct message_t *message, int client_id)
-{
-	int i;
-	for(i = 1; i<MESSAGE_LENGTH; i ++)
-	{
-		message->data[i] = rand() % MAX_MESSAGE_LETTER;  
-	}		
-	message->sender = client_id;	
-}
-
 
 struct port_t 
 {
